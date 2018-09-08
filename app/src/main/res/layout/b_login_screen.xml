@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Rel_topmost"
+        android:paddingLeft="10dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
+        android:background="#4ba33d"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:id="@+id/image_arrow"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/backarrow"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/applogo"
+            android:adjustViewBounds="true"
+            android:maxWidth="180dp"
+            android:maxHeight="160dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Rel_2nd"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_username"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@mipmap/ic_mobile"
+            android:drawablePadding="10dp"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_18"
+            android:inputType="number"
+            android:maxLength="11"
+            android:backgroundTint="#4ab33d"
+            android:layout_marginRight="20dp"
+            android:textColorHint="#c0c0c0"
+            android:hint="@string/mobile_number"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_password"
+            android:layout_below="@+id/editText_username"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#000000"
+            android:backgroundTint="#4ab33d"
+            android:inputType="textPassword"
+            android:textColorHint="#c0c0c0"
+            android:drawableLeft="@mipmap/ic_password"
+            android:drawablePadding="10dp"
+            android:textSize="@dimen/text_18"
+            android:hint="@string/password"/>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_frgt_pwd"
+        android:layout_below="@+id/Rel_2nd"
+        android:layout_marginTop="80dp"
+        android:textSize="@dimen/text_16"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:text="@string/forgot_password"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text_frgt_pwd"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_no_account"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/text_16"
+            android:text="@string/dont_have_account"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_sign_up"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/colorAccent"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/text_no_account"
+            android:layout_marginLeft="8dp"
+            android:text="@string/_sign_up"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/text_login"
+        android:textColor="#ffffff"
+        android:background="#005dbd"
+        android:textSize="@dimen/text_16"
+        android:text="@string/login"
+        android:textAllCaps="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

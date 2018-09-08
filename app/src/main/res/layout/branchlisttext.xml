@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Rel_topmost"
+            >
+        <TextView
+            android:id="@+id/branch_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/text_16"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            />
+
+        <ImageView
+            android:id="@+id/branch_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="10dp"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/branch_name"
+            android:src="@mipmap/default_app"/>
+
+        <TextView
+            android:id="@+id/branch_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/branch_img"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="@dimen/text_16"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:gravity="center"
+            android:drawableRight="@mipmap/map_icon"
+            android:background="@drawable/back_blue"
+            android:drawablePadding="10dp"
+            android:text="@string/get_location"
+            android:textColor="#ffffff"
+            />
+
+            </RelativeLayout>
+
+</RelativeLayout>

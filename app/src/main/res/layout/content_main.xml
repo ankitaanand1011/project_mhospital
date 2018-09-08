@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="sketch.m_hospital.com.m_hospital.Activities.Container"
+    tools:showIn="@layout/app_bar_main">
+
+   <FrameLayout
+       android:layout_above="@+id/Lin_bottom"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/frame"
+     >
+   </FrameLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/Lin_bottom"
+       android:background="@color/theme_white_1"
+       android:padding="15dp"
+       android:orientation="horizontal"
+       android:layout_alignParentBottom="true">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:id="@+id/Lin1">
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/hospital_view"
+             android:tint="@color/colorAccent"
+             android:src="@mipmap/a360_96"/>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:id="@+id/Lin2">
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:tint="@color/colorAccent"
+             android:src="@mipmap/book_doctor96"/>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:id="@+id/Lin3">
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:tint="@color/colorAccent"
+             android:src="@mipmap/book_package96"/>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:id="@+id/Lin4">
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:tint="@color/colorAccent"
+             android:src="@mipmap/mes96"/>
+
+      </LinearLayout>
+
+
+   </LinearLayout>
+   </RelativeLayout>

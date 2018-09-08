@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/Rel_topmost">
+   <RelativeLayout
+       android:layout_height="match_parent"
+       android:layout_width="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_disease_name"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:textSize="@dimen/text_28"
+        android:textColor="#000000"
+        android:gravity="center"
+        />
+       <me.biubiubiu.justifytext.library.JustifyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_details"
+        android:layout_below="@+id/text_disease_name"
+        android:textColor="#000000"
+        android:textSize="@dimen/text_14"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="10dp"/>
+
+
+
+       <Button
+           android:layout_marginBottom="10dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/button_doctor"
+           android:layout_below="@+id/text_details"
+           android:layout_marginTop="10dp"
+           android:text="@string/BookYourDoctor"
+           android:layout_centerHorizontal="true"
+           android:textColor="#ffffff"
+           android:textSize="@dimen/text_16"
+           android:paddingTop="10dp"
+           android:paddingBottom="10dp"
+           android:paddingRight="20dp"
+           android:paddingLeft="20dp"
+           android:background="@drawable/back_bookdetails"
+           />
+   </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

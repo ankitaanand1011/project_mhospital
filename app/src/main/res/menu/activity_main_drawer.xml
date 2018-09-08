@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/home"
+            android:id="@+id/home"
+            android:checked="true"
+            android:icon="@drawable/home"
+            app:showAsAction="ifRoom"
+            />
+        <item
+            android:title="@string/message"
+            android:icon="@mipmap/messagec"
+            android:id="@+id/message"
+            app:showAsAction="ifRoom"/>
+
+        <item android:title="@string/HospitalInformations"
+            android:icon="@mipmap/about_mhospitalss_smooth"
+            android:id="@+id/hospital_information"
+            app:showAsAction="ifRoom"/>
+
+        <item android:title="@string/BookYourDoctor"
+            android:icon="@drawable/book_doctor32"
+            android:id="@+id/book_doctor"
+            app:showAsAction="ifRoom"/>
+
+        <item android:title="@string/BookHealthPackage"
+            android:icon="@drawable/mycheckup"
+            android:id="@+id/book_package"
+            app:showAsAction="ifRoom"/>
+
+        <item android:title="@string/SymptomsChecker"
+            android:icon="@drawable/symptom"
+            android:id="@+id/system_checker"
+            app:showAsAction="ifRoom"/>
+
+
+        <item android:title="@string/HealthEncyclopedia"
+            android:icon="@drawable/encylo"
+            android:id="@+id/health_encyclopedia"
+            app:showAsAction="ifRoom"/>
+
+        <item android:title="@string/HealthBlog"
+            android:icon="@drawable/healthb"
+            android:id="@+id/health_blog"
+            app:showAsAction="ifRoom"/>
+
+        <item android:title="@string/PatientDashboard"
+            android:icon="@drawable/dashboard32"
+            android:id="@+id/patient_dashboard"
+            app:showAsAction="ifRoom"/>
+
+
+        <item android:title="@string/Hospital360View"
+            android:icon="@mipmap/a360_96"
+            android:id="@+id/hospital_view"
+            app:showAsAction="ifRoom"/>
+        <item android:title="@string/emergency"
+            android:icon="@drawable/emergency96"
+            android:id="@+id/emergency"
+            app:showAsAction="ifRoom"/>
+
+        <item android:title="@string/logout"
+            android:icon="@drawable/logout32"
+            android:id="@+id/logout"
+            app:showAsAction="ifRoom"/>
+    </group>
+
+
+</menu>

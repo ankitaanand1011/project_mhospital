@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="@mipmap/default_app"
+        >
+     <!--   <ss.com.bannerslider.views.BannerSlider
+            android:layout_alignParentTop="true"
+            android:id="@+id/banner_slider1"
+            android:layout_width="match_parent"
+            app:defaultBanner="1"
+            app:loopSlides="true"
+            app:interval="3000"
+            android:layout_height="wrap_content"
+            />-->
+
+       <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            custom:pager_animation="DepthPage"
+            custom:auto_cycle="true"
+            custom:indicator_visibility="visible"
+            custom:pager_animation_span="1100"
+            android:layout_height="wrap_content"/>
+
+        <com.daimajia.slider.library.Indicators.PagerIndicator
+            android:id="@+id/custom_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            custom:selected_color="#0095BF"
+            custom:unselected_color="#55333333"
+            custom:shape="oval"
+            custom:selected_padding_left="5dp"
+            custom:selected_padding_right="5dp"
+            custom:unselected_padding_left="5dp"
+            custom:unselected_padding_right="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            custom:selected_width="6dp"
+            custom:selected_height="6dp"
+            custom:unselected_width="6dp"
+            custom:unselected_height="6dp"
+            android:layout_marginBottom="20dp"
+            />
+        <com.daimajia.slider.library.Indicators.PagerIndicator
+            android:id="@+id/custom_indicator2"
+            style="@style/AndroidImageSlider_Corner_Oval_Orange"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            />
+        <ProgressBar
+            android:id="@+id/pb_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_below="@+id/rl1"
+        android:layout_above="@+id/Lin_bottons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            >
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/Lin_home_top"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Rel_left"
+                    android:gravity="center"
+                    android:background="@drawable/symptom_checker_bag"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/grid_image"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/about_mhospitalss_smooth"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/grid_text"
+                        android:textColor="#000000"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_12"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/grid_image"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="@string/HospitalInformations"
+                        android:textAllCaps="true"
+                        />
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content">
+
+                </View>
+
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Rel_right"
+                    android:gravity="center"
+                    android:background="@drawable/symptom_checker_bag"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/grid_image2"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/book_health_smooth"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/grid_text2"
+                        android:textColor="#000000"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_12"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/grid_image2"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="@string/BookYourDoctor"
+                        android:textAllCaps="true"
+                        />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content">
+
+                </View>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Rel_rightmost"
+                    android:gravity="center"
+                    android:background="@drawable/symptom_checker_bag"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/grid_image3"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/health_package_smooth"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/grid_text3"
+                        android:textColor="#000000"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_12"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:layout_below="@+id/grid_image3"
+                        android:maxLines="2"
+                        android:text="@string/BookHealthPackage"
+                        android:textAllCaps="true"
+                        />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/Lin_home_top">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Rel_second"
+                    android:gravity="center"
+                    android:background="@drawable/symptom_checker_bag"
+                    android:layout_weight="1"
+                    >
+
+                    \\\\\\\\\\\\\\
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/grid_image4"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/checkukp_smooth"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/grid_text4"
+                        android:textColor="#000000"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_12"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/grid_image4"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="@string/SymptomsChecker"
+                        android:textAllCaps="true"
+                        />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content">
+
+                </View>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Rel_second_right"
+                    android:gravity="center"
+                    android:background="@drawable/symptom_checker_bag"
+                    android:layout_weight="1"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/grid_image5"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/symptom_checker_smooth"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_12"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/grid_image5"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="@string/HealthEncyclopedia"
+                        android:textAllCaps="true"
+                        />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content">
+
+                </View>
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Rel_second_right_most"
+                    android:gravity="center"
+                    android:background="@drawable/symptom_checker_bag"
+                    android:layout_weight="1"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/grid_image6"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/health_blog_smooth"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_12"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/grid_image6"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="@string/HealthBlog"
+                        android:textAllCaps="true"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/Lin_bottons"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <RelativeLayout
+            android:id="@+id/button_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@drawable/patient_dashboard_bag"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+
+                >
+
+                <ImageView
+                    android:id="@+id/p"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/patients_dashboardss"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+
+                    />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_12"
+                    android:text="@string/PatientDashboard"
+                    android:layout_toRightOf="@+id/p"
+                    android:layout_centerVertical="true"
+                    android:textColor="#4ba33d"
+                    android:textAllCaps="true"
+                    />
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/button_emergency"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@drawable/emergency_bag"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                >
+
+                <ImageView
+                    android:id="@+id/e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/emergency64"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    />
+
+                <TextView
+                    android:textColor="#e85e5e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_12"
+                    android:text="@string/emergency"
+                    android:layout_toRightOf="@+id/e"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:textAllCaps="true"
+                    />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

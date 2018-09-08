@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/Rel_top"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_20"
+            android:gravity="center"
+            android:maxLines="2"
+            android:layout_centerHorizontal="true"
+
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Lin_search"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_below="@+id/Rel_topmost"
+
+        android:orientation="horizontal">
+        <AutoCompleteTextView
+            android:id="@+id/edt_search"
+            android:layout_toLeftOf="@+id/image_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:hint="@string/SearchSymptomsByName"
+            android:paddingTop="10dp"
+            android:textSize="@dimen/text_18"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_search"
+            android:scaleX="-1"
+            android:src="@android:drawable/ic_menu_search"/>
+
+        <ProgressBar
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleX="-1"
+            android:src="@android:drawable/ic_menu_search"
+            android:id="@+id/image_search_pb"
+            />
+    </RelativeLayout>
+
+
+
+
+    <ProgressBar
+        android:id="@+id/pb_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+
+
+
+
+    <ExpandableListView
+        android:groupIndicator="@null"
+        android:scrollbars="none"
+        android:childDivider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:divider="@android:color/transparent"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/Lin_search"
+        android:id="@+id/lvExp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <RelativeLayout
+      android:id="@+id/rl1"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+
+  <LinearLayout
+      android:id="@+id/ll3"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+
+      >
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingLeft="10dp"
+          android:paddingRight="10dp"
+          android:layout_centerVertical="true"
+          android:text="@string/Service"
+          android:textSize="@dimen/text_18"
+          android:layout_weight="2"
+          android:id="@+id/text_header"
+          android:gravity="center"
+          android:padding="10dp"
+          android:textColor="@android:color/white"
+          android:background="@color/colorPrimary"
+          />
+
+      <View
+          android:layout_width="2dp"
+          android:layout_height="match_parent"
+          android:background="#FF596CDA"
+          />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingLeft="10dp"
+          android:paddingRight="10dp"
+          android:layout_centerVertical="true"
+          android:text="@string/Service_Packages"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:padding="10dp"
+          android:textSize="@dimen/text_18"
+          android:textColor="@android:color/white"
+          android:background="@color/colorPrimary"
+          />
+
+
+  </LinearLayout>
+  <ListView
+      android:id="@+id/lv_health_package"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:divider="@null"
+      android:dividerHeight="0dp"
+      android:layout_below="@+id/ll3"
+      >
+
+  </ListView>
+
+</RelativeLayout>
+
+
+
+    <ProgressBar
+        android:id="@+id/pb_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+
+
+
+</RelativeLayout>

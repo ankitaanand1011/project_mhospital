@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:textAllCaps="true"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_possibility"
+            android:gravity="center"
+            android:textSize="@dimen/text_28"
+            android:textStyle="bold"
+            />
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_desc"
+            android:textSize="@dimen/text_14"
+            android:gravity="center"
+            android:layout_below="@+id/text_possibility"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_doctor"
+            android:layout_below="@+id/text_desc"
+            android:layout_marginTop="10dp"
+            android:text="@string/BookYourDoctor"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_16"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/back_bookdetails"
+            />
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>
